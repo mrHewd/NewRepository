@@ -4,20 +4,15 @@
 	<title>Автомобильная компания</title>
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
-	<style>
-		body {
-			margin: 20;
-			background-color: lightgray;
-		}
-	</style>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 </HEAD>
 <body>
-	<H1>Автомобильная компания</H1>
-	<p>С момента основания компании в 2017 году мы стремимся создавать для наших клиентов первоклассные решения во всем, что касается автомобилей.</p>
-	<form>
+	<H1><div class="col-md-12">Автомобильная компания</div></H1>
+	<p><div class="col-md-12">С момента основания компании в 2017 году мы стремимся создавать для наших клиентов первоклассные решения во всем, что касается автомобилей.</div></p>
+	<form><div class="col-md-12">
 		<div class="form-group">
-			<label for="exampleInputEmail1">Выберите модель:</label>
-			<select type="email" class="form-control" id="exampleInputEmail1">
+			<label for="inputModel">Выберите модель:</label>
+			<select class="form-control" id="inputModel">
 				<option value="m1">Форд</option>
 				<option value="m2">Ауди</option>
 				<option value="m3">Бентли</option>
@@ -25,8 +20,8 @@
 			</select>
 		</div>
 		<div class="form-group">
-			<label for="exampleInputPassword1">Выберите мощность:</label>
-			<select type="password" class="form-control" id="exampleInputPassword1">
+			<label for="inputPower">Выберите мощность:</label>
+			<select class="form-control" id="inputPower">
 			<option value="p1">120</option>
 			<option value="p2">130</option>
 			<option value="p3">140</option>
@@ -34,21 +29,20 @@
 			</select>
 		</div>
 		<div class="form-group">
-			<label for="exampleInputPassword1">Выберите мощность:</label>
-			<select type="password" class="form-control" id="exampleInputPassword1">
+			<label for="inputPerformance">Выберите производительность:</label>
+			<select class="form-control" id="inputPerformance">
 			<option value="pe1">80</option>
 			<option value="pe2">70</option>
 			<option value="pe3">60</option>
 			<option value="pe4">50</option>
 			</select>
 		</div>
-		<button type="submit" class="btn btn-default">Поиск</button>
-	</form>
-	<table width = 1000 border = "2" margin = "5">
+		<button type="button" class="btn btn-success">Поиск</button>
+	</div></form>
+	<table class="table"><div class="col-md-12">
 		<tr>
 			<th colspan = "4">Автомобили</th>
 		</tr>
-		<tr>
 			<th>id</th>
 			<th>Модель</th> 
 			<th>Мощность</th>
@@ -78,6 +72,6 @@
 			<td>150</td>
 			<td>50</td>
 		</tr>
-	</table>
+	</div></table>
 </body>
 </html>  
